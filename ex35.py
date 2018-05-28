@@ -40,15 +40,10 @@ if __name__ == '__main__':
     for i in range(0, len(birthdays_count)):
         birthdays_count[i] = months.get(birthdays_count[i])
 
-    print(birthdays_count)
-    # for i in birthdays_count:
-    #     if i in months.keys():
-    #         birthdays_count[birthdays_count.index(i)] = months[i]
-
     birthdays_count = Counter(birthdays_count)
 
-    # for i in birthdays_count:
-    #     print(i+': '+str(birthdays_count[i]))
+    for i in birthdays_count:
+        print(i+': '+str(birthdays_count[i]))
 
 
 
